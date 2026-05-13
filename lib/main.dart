@@ -38,6 +38,31 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Etec Adolpho Berezin - PAM1'),
           backgroundColor: Colors.redAccent,
       ),
+
+      drawer: Drawer(
+      child: const Center(
+      child: Text("Menu esquerdo"),
+      ),
+      backgroundColor: Colors.redAccent,  
+      ),
+
+      endDrawer: Drawer(
+      child: const Center(
+      child: Text("Menu direito"),
+      ),
+      backgroundColor: Colors.redAccent,
+      ),
+
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.redAccent,
+        child: const Text("Desenvolvimento Mobile com Flutter")
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed:() {},
+        child: const Icon(Icons.add),
+      ),
+
       body: const Center(
         child: Text(
           'Desenvolvimento Mobile com Flutter',
